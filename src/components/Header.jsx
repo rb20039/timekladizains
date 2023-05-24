@@ -1,14 +1,15 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import styles from '../style';
 import { myface } from '../assets';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
-
+import { Context } from '../App';
 const Header = () => {
+    const [languageEN, setLanguageEN] = useContext(Context)
   return (
     <section id="home" className='relative'>
         <div className={`sm:pt-16 py-6`}>
-            <h1 className="sm:pl-8 pl-4 font-shrikhand lg:text-[72px] ss:text-[52px] text-[32px] text-primary">Mans ceļš līdz Latvijas Universitātei</h1>
+            <h1 className="sm:pl-8 pl-4 font-shrikhand lg:text-[72px] ss:text-[52px] text-[32px] text-primary">{languageEN ? "My way to the University of Latvia" : "Mans ceļš līdz Latvijas Universitātei"}</h1>
             <div className='bg-repeat-x bg-center h-[100px] w-[100%] bg-[url("./assets/road.svg")]'>
             </div>
         </div>

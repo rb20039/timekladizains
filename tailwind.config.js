@@ -11,7 +11,7 @@ module.exports = {
         shadows: "#737373",
         shadowstwo: "#b1b2b3",
         secondary: "#eaa900",
-        secondaytwo: "ff8300",
+        secondarytwo: "#ff8300",
         dimWhite: "rgba(255, 255, 255, 0.7)",
         dimBlue: "rgba(9, 151, 124, 0.1)",
       },
